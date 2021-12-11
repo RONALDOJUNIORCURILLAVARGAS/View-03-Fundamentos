@@ -1,18 +1,23 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!--<img alt="Vue logo" src="./assets/logo.png">-->
     <!--Si no se declara star en counter.vue props este sera un atributo
     y no una properties-->
-      <Counter :start="100"/>
+    <!--Como no uso el counter comento esta linea-->
+     <!-- <Counter :start="100"/> -->
+<Indecision/>
   </div>
     
 </template>
 
 <script>
-import Counter from './components/Counter.vue'
-
+//import Counter from './components/Counter.vue'
+import Indecision from './components/Indecision.vue'
 export default {
-  components: { Counter },
+  components: {
+    //Como nu uso el counter lo comento
+   //  Counter , 
+     Indecision},
   name: 'App',
 }
 </script>
